@@ -14,17 +14,17 @@ def main():
             dictall[z[0]] = z[1]
     
 
-    for x in dictall:
-        print(x)
-        if os.path.exists(f"./NASDAQ/{x}.txt"):
-            continue
-        try:
-            ticker = yf.Ticker(x)
-            df = ticker.history(period='200y')
-            df.to_csv(f"./NASDAQ/{x}.txt")
-        except:
-            continue
-
+    # for x in dictall:
+    #     print(x)
+    #     if os.path.exists(f"./NASDAQ/{x}.txt"):
+    #         continue
+    #     try:
+    #         ticker = yf.Ticker(x)
+    #         df = ticker.history(period='200y')
+    #         df.to_csv(f"./NASDAQ/{x}.txt")
+    #     except:
+    #         continue
+    tick = yf.ticker('AAPL')
 
 if __name__ == "__main__":
     main()
