@@ -1,2 +1,8 @@
 .vscode
-NASDAQ
+.venv
+NASDAQD2D
+
+
+# Added by cargo
+
+/target
