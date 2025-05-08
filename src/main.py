@@ -13,7 +13,7 @@ def main():
             rankedbymarketcap[z[0]] = z[1]
 
 
-
+    #This is the code to download the data from yfinance
     # for x in rankedbymarketcap:
     #     print(x)
     #     if os.path.exists(f"./NASDAQ/{x}.txt"):
